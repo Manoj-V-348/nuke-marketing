@@ -1,0 +1,42 @@
+header{
+    height: 10dvh;
+    padding: 40px;
+}
+header > .logo--link{
+    margin-right: auto;
+}
+header .main--logo{
+    height: 100px;
+}
+.pages--container{
+    gap: 10px;
+}
+.pages--container > a{
+    padding: 15px 25px;
+}
+
+.talk--button{
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    justify-content: space-between;
+    position: relative;
+}
+.talk--button:hover{
+    background-color: rgb(224, 224, 224);
+    color: black;
+    box-shadow: -4px 4px 0px black;
+    padding-left: 45px;
+    cursor: pointer;
+}
+.talk--button:hover > .nuke--logo{
+    opacity: 1;
+    left: 5px;
+}
+.nuke--logo{
+    position: absolute;
+    height: 40px;
+    left: 0;
+    transform: rotate(-90deg);
+    opacity: 0;
+}
