@@ -1,0 +1,17 @@
+footer{
+    gap: 5px;
+    padding: 40px;
+    padding-bottom: 0px;
+}
+footer > div > img{
+    width: 40px;
+}
+footer > div > img:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+.nuke--footer > img{
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+}

@@ -18,7 +18,7 @@ function Header() {
             <Link to="/about">ABOUT US</Link>
             <Link to="/projects">PROJECTS</Link>
             <Link to="/services">SERVICES</Link>
-            <a className="talk--button horizontal--flex center">
+            <a className="talk--button horizontal--flex center" href='https://docs.google.com/forms/d/e/1FAIpQLSfP78nWZyWmHW7x5qOEsqVjmgGCfPYldqZM7u77oeCwrk2YCg/viewform?pli=1' target='_blank'>
                 <img src={nukeLogo} alt="nuke" className='nuke--logo' />
                 <p>LET'S TALK!</p>
             </a>

@@ -210,40 +210,82 @@
 .service2 > div > .service--button > a{
     border: 1px solid white;
 }
-.creativity--container{
+.our--team--heading{
+    padding-top: 60px;
+    justify-content: space-between;
+}
+.our--team--heading > .big--font{
+    font-size: 3.5rem;
+    width: 50%;
+    margin-right: auto;
+}
+.our--team--heading > img{
+    height: 150px;
+    width: 150px;
+    margin-right: 5%;
+    object-fit: contain;
+}
+.team--members--tile--container{
+    margin-top: 100px;
+    gap: 25px;
+}
+.team--member--tile{
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 40%;
+    height: auto;
+}
+.team--member--tile > img{
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: 10;
+}
+.member--details{
+    background-color: rgb(224, 221, 221);
+    padding: 10px;
+    padding-top: 20px;
+}
+.member--name{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.member--role{
+    font-size: 0.9rem;
+}
+.team--members--tile--container{
+    justify-content: space-evenly;
+}
+.lets--discuss--container{
     background-color: black;
     color: white;
     padding: 40px;
-    margin: 30px;
-    margin-top: 40px;
-    border-radius: 30px;
-    position: relative;
+    padding-top: 70px;
+    margin-top: 100px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    gap: 35px;
 }
-.creativity--container > p{
-    font-size: 60px;
-    font-weight: 400;
+.lets--discuss--container > div > p{
+    font-size: 3.5rem;
+    margin-left: auto;
+    width: 60%;
+    text-align: right;
 }
-.creativity--container > div{
-    height: 350px;
-    width: 100%;
-    position: relative;
+.lets--discuss--container > div > img{
+    object-fit: contain;
+    height: 220px;
+    width: 250px;
 }
-.creativity--container > div > a{
+.footer--buttons{
+    justify-content: space-around;
+}
+.footer--buttons > a{
     background-color: white;
-    color: black;
     padding: 15px 25px;
-    border-radius: 35px;
-    gap: 15px;
-    margin-right: auto;
-    font-weight: 600;
-    font-size: 24px;
+    border-radius: 30px;
+    gap: 10px;
 }
-.creativity--container > div > a > .arrow{
+.footer--buttons > a > .arrow{
     transform: rotate(45deg);
-}
-.creativity--container > img{
-    position: absolute;
-    width: 500px;
-    right: 0;
-    bottom: 0;
 }

@@ -1,0 +1,40 @@
+.our--works--container{
+    background-color: black;
+    padding: 50px;
+    color: white;
+}
+.work--container--left, .our--works--container{
+    gap: 15px;
+}
+.work--container--left{
+    width: 100%;
+    justify-content: space-between;
+}
+.work--container--left > p > span{
+    font-size: 4rem;
+    font-weight: 500;
+}
+.work--container--left > p{
+    font-size: 2rem;
+}
+.work--container--left > img{
+    height: 75px;
+    object-fit: contain;
+}
+.image--details--container{
+    gap: 10px;
+}
+.image--details--container > img{
+    width: 50%;
+}
+.image--details--container > div{
+    justify-content: space-between;
+}
+.work--container--left > .graph{
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+}
+.our--works--container > img{
+    width: 40%;
+}

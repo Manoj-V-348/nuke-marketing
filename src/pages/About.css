@@ -1,0 +1,16 @@
+.about--container{
+    padding: 60px;
+    padding-bottom: 0;
+    gap: 25px;
+}
+.about--heading{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.about--subHeading{
+    font-weight: 500;
+}
+.about--text{
+    font-weight: 300;
+    font-size: 0.8rem;
+}

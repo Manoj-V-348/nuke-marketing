@@ -2,12 +2,19 @@ import React from 'react'
 
 import "./Projects.css"
 import "../App.css"
+import CreativityContainer from '../components/CreativityContainer'
 
 function Projects() {
   return (
     <>
-        <div className="projects--container">
-            <p>Projects</p>
+        <CreativityContainer />
+        <div className="work--testimonials--button--container horizontal--flex center">
+          <a href="/our-works" className="works--button horizontal--flex center">
+            OUR WORKS
+          </a>
+          <a href="/testimonials" className="works--button horizontal--flex center">
+            TESTIMONIALS
+          </a>
         </div>
     </>
   )

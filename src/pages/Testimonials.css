@@ -1,0 +1,39 @@
+@font-face {
+    font-family: Rubik;
+    src: url("../fonts/Rubik.ttf") format("truetype");
+}
+.testimonials--container{
+    background-color: black;
+    padding: 60px;
+    color: white;
+}
+.testimonial--box{
+    gap: 5px;
+}
+.testimonial--box > img{
+    height: 500px;
+    object-fit: contain;
+}
+.testimonial--details{
+    gap: 15px;
+}
+.testimonial--box{
+    width: 70%;
+}
+.testimonial--details > .owner--name{
+    font-weight: 500;
+    font-size: 2.5rem;
+    font-family: 'Rubik', 'sans-serif';
+}
+.testimonial--details > .owner--role{
+    font-weight: 300;
+    font-size: 1.25rem;
+    opacity: 0.7;
+    font-family: 'Rubik', 'sans-serif';
+}
+.testimonial--details > .owner--description{
+    font-size: 1.15rem;
+    margin-top: 50px;
+    width: 90%;
+    font-family: 'Rubik', 'sans-serif';
+}
