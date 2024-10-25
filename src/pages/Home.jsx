@@ -10,6 +10,7 @@ import Footer from '../components/Footer';
 import ServiceComponent from '../components/ServiceComponent';
 
 import servicedata from "../data/services";
+import memberdata from "../data/teammatesdata";
 
 import "../App.css"
 import "./Home.css"
