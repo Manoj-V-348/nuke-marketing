@@ -311,6 +311,9 @@
     .pill--cutout{
         scale: 0.75;
     }
+    .pill--cutout:hover{
+        scale: 0.75;
+    }
     .discuss--your--ideas{
         align-items: center;
         justify-content: center;
