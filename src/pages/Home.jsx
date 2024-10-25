@@ -8,6 +8,7 @@ import { Icon } from '@iconify/react';
 
 import Footer from '../components/Footer';
 import ServiceComponent from '../components/ServiceComponent';
+import Teammates from '../components/Teammates';
 
 import servicedata from "../data/services";
 import memberdata from "../data/teammatesdata";
