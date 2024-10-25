@@ -7,7 +7,7 @@ import ServiceComponent from '../components/ServiceComponent';
 import Teammates from '../components/Teammates';
 
 import servicedata from "../data/services";
-import memberdata from "../data/teammatesdata"
+import memberdata from "../data/teammatesdata";
 
 import "../App.css"
 import "./Home.css"

@@ -27,6 +27,7 @@ import serviceBlob4 from "../assets/Home/serviceBlob4.png";
 import teamBlob from "../assets/Home/cubeTeam.png";
 import bottomBlob from "../assets/Home/homeBottom.png";
 import CreativityContainer from '../components/CreativityContainer';
+import rocket from "../assets/Home/Rocket.png";
 
 
 function Home() {
