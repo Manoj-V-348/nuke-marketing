@@ -1,4 +1,5 @@
 import React from 'react'
+import Transitions from '../Transitions';
 
 import "./Testimonials.css";
 
@@ -25,4 +26,4 @@ function Testimonials() {
   )
 }
 
-export default Testimonials
+export default Transitions(Testimonials);

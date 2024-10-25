@@ -1,4 +1,5 @@
 import React from 'react'
+import Transitions from '../Transitions';
 
 import "./About.css"
 import "../App.css"
@@ -94,4 +95,4 @@ function Terms() {
   )
 }
 
-export default Terms
+export default Transitions(Terms);

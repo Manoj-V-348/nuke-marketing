@@ -1,4 +1,5 @@
 import React from 'react'
+import Transitions from '../Transitions';
 
 import "./Projects.css"
 import "../App.css"
@@ -20,4 +21,4 @@ function Projects() {
   )
 }
 
-export default Projects
+export default Transitions(Projects)

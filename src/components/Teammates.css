@@ -1,0 +1,39 @@
+.team--member--tile{
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 550px;
+    height: 600px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.image--container{
+    width: 100%;
+}
+.team--member--tile img{
+    object-fit: contain;
+    border-radius: 10px;
+    z-index: 10;
+}
+.member--details{
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.454);
+    color: white;
+    bottom: 5%;
+}
+.member--name{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.member--role{
+    font-size: 0.9rem;
+}
+@media (max-width: 500px) {
+    .team--member--tile{
+        width: 350px;
+        height: 500px;
+    }
+}

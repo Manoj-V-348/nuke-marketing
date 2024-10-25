@@ -37,3 +37,25 @@
     width: 90%;
     font-family: 'Rubik', 'sans-serif';
 }
+
+@media (max-width: 900px) {
+    .testimonials--container, .testimonial--box{
+        flex-direction: column;
+    }
+    .testimonial--details{
+        text-align: center;
+    }
+    .testimonial--details > .owner--description{
+        margin: 15px 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .testimonials--container{
+        padding: 30px;
+    }
+    .testimonial--box, .testimonial--details{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+}

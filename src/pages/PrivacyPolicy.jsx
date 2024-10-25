@@ -1,4 +1,5 @@
 import React from 'react'
+import Transitions from '../Transitions';
 
 import "./About.css"
 import "../App.css"
@@ -51,4 +52,4 @@ function PrivacyPolicy() {
   )
 }
 
-export default PrivacyPolicy
+export default Transitions(PrivacyPolicy);

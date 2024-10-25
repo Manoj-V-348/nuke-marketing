@@ -6,6 +6,7 @@
     margin-top: 40px;
     border-radius: 30px;
     position: relative;
+    overflow: hidden;
 }
 .creativity--container > p{
     font-size: 60px;
@@ -34,4 +35,37 @@
     width: 500px;
     right: 0;
     bottom: 0;
+}
+
+@media (max-width: 900px) {
+    .creativity--container > p{
+        text-align: center;
+    }
+    .creativity--container > div{
+        justify-content: center;
+        height: 300px;
+        align-items: flex-start;
+        margin-top: 25px;
+    }
+    .creativity--container > img{
+        height: 300px;
+        width: 300px;
+        object-fit: contain;
+        right: 0;
+        bottom: 0;
+    }
+    .our--works--button{
+        margin-left: auto;
+        height: auto;
+    }
+}
+@media (max-width: 500px) {
+    .creativity--container{
+        padding: 20px;
+        margin: 20px 0;
+    }
+    .creativity--container > img{
+        right: -10px;
+        bottom: -11px;
+    }
 }

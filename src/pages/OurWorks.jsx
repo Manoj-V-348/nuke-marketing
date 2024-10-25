@@ -1,4 +1,5 @@
 import React from 'react'
+import Transitions from '../Transitions';
 
 import Likes from "../assets/works/LikeDetails.png";
 import reelRightImg from "../assets/works/RightTop.png";
@@ -34,4 +35,4 @@ function OurWorks() {
   )
 }
 
-export default OurWorks
+export default Transitions(OurWorks);

@@ -1,0 +1,78 @@
+.service{
+    background-color: rgb(218, 217, 217);
+    padding: 25px;
+    border-radius: 25px;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+.service > div{
+    align-items: flex-end;
+    width: 100%;
+}
+.service--button{
+    width: 40%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    opacity: 0;
+}
+.service--button > a{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    background-color: white;
+    color: black;
+}
+.service--arrow{
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 15px;
+}
+.service--arrow > p{
+    text-align: right;
+}
+.service--arrow > .arrow{
+    transform: rotate(45deg);
+}
+.service1, .service3{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.service2{
+    background-color: black;
+    color: white;
+}
+.service2 p, .service2 a{
+    color: white;
+}
+.service2 > div > .service--button > a{
+    border: 1px solid white;
+}
+.service > img{
+    position: absolute;
+    height: 50%;
+    width: 140px;
+    object-fit: contain;
+    top: 0;
+    right: 0;
+    scale: 1.05;
+    opacity: 0;
+}
+.service:hover{
+    background-color: black;
+    color: white;
+}
+.service:hover .service--button{
+    opacity: 1;
+}
+.service:hover > img{
+    opacity: 1;
+}
+.service:hover .service--arrow{
+    color: white;
+}

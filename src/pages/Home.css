@@ -90,6 +90,7 @@
     padding: 0px 25px;
     gap: 50px;
     margin-top: -5px;
+    overflow: hidden;
 }
 .marquee{
     justify-content: space-between;
@@ -103,7 +104,55 @@
     width: 50px;
 }
 .our--services--area--container{
+    background-color: white;
     padding: 40px;
+    position: relative;
+}
+.backdrop--filter{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(20px);
+    z-index: 11;
+    padding: 25px;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.unlock{
+    gap: 10px;
+}
+.unlock > .big--font{
+    font-size: 3rem;
+}
+.unlock--button{
+    padding: 15px 25px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border-radius: 50px;
+    gap: 10px;
+    width: 190px;
+    position: relative;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+.unlock--button > img{
+    height: 16px;
+    object-fit: contain;
+    position: absolute;
+    left: -50%;
+    opacity: 0;
+}
+.unlock--button:hover{
+    color: rgb(0, 255, 0);
+    scale: 1.05;
+    width: 250px;
+}
+.unlock--button:hover > .unlock--nuke{
+    left: 170px;
+    opacity: 1;
 }
 .our--services--area--container > .big--font{
     font-size: 69px;
@@ -123,6 +172,9 @@
 .services--carousel--container{
     height: auto;
     margin-top: 60px;
+    height: 550px;
+    overflow: hidden;
+    align-items: flex-start;
 }
 .services--carousel--left{
     width: 40%;
@@ -155,60 +207,10 @@
 .services--carousel--right{
     width: 100%;
     gap: 20px;
-}
-.service{
-    background-color: rgb(218, 217, 217);
-    padding: 25px;
-    border-radius: 25px;
-    align-items: flex-start;
-    justify-content: space-between;
-    height: 150px;
-}
-.service > div{
-    align-items: flex-end;
-    width: 100%;
-}
-.service--button{
-    width: 40%;
+    overflow-y: hidden;
     align-items: flex-start;
     justify-content: flex-start;
-}
-.service--button > a{
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 12px;
-}
-.service--button > a:hover{
-    background-color: white;
-    color: black;
-}
-.service--arrow{
-    width: 100%;
-    align-items: flex-end;
-    justify-content: flex-end;
-    gap: 15px;
-}
-.service--arrow > p{
-    text-align: right;
-}
-.service--arrow > .arrow{
-    transform: rotate(45deg);
-}
-.service1, .service3{
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.service2{
-    background-color: black;
-    color: white;
-}
-.service2 p, .service2 a{
-    color: white;
-}
-.service2 > div > .service--button > a{
-    border: 1px solid white;
+    animation: servicesAnim 10s ease infinite;
 }
 .our--team--heading{
     padding-top: 60px;
@@ -228,33 +230,12 @@
 .team--members--tile--container{
     margin-top: 100px;
     gap: 25px;
-}
-.team--member--tile{
-    background-color: black;
-    border-radius: 10px;
     overflow: hidden;
-    width: 40%;
-    height: auto;
-}
-.team--member--tile > img{
-    object-fit: cover;
-    border-radius: 10px;
-    z-index: 10;
-}
-.member--details{
-    background-color: rgb(224, 221, 221);
-    padding: 10px;
-    padding-top: 20px;
-}
-.member--name{
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-.member--role{
-    font-size: 0.9rem;
-}
-.team--members--tile--container{
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(8, 550px);
+    position: relative;
+    animation: teamAnim 16s ease-in-out infinite;
 }
 .lets--discuss--container{
     background-color: black;
@@ -272,7 +253,7 @@
     width: 60%;
     text-align: right;
 }
-.lets--discuss--container > div > img{
+.lets--discuss--container > div > div > img{
     object-fit: contain;
     height: 220px;
     width: 250px;
@@ -288,4 +269,295 @@
 }
 .footer--buttons > a > .arrow{
     transform: rotate(45deg);
+}
+.pill--cutout{
+    justify-content: flex-start;
+    overflow: hidden;
+}
+.pill--cutout:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+.team--members--tile--container{
+    justify-content: space-evenly;
+}
+.lets--discuss--container{
+    overflow: hidden;
+}
+.lets--discuss--container > .text--area{
+    position: relative;
+}
+.lets--discuss--container > .text--area > .vertical--flex{
+    gap: 0px;
+}
+.rocket{
+    object-fit: contain;
+    height: 100px;
+    width: 100px;
+    z-index: 0;
+    transform: translateY(-200%);
+    transition: all 4s ease;
+}
+.lets--discuss--container:hover .rocket{
+    transform: translateY(100px);
+}
+
+
+@media (max-width : 900px) {
+    .home--container > .home--text--button, .our--team--heading{
+        flex-direction: column;
+        text-align: center;
+    }
+    .pill--cutout{
+        scale: 0.75;
+    }
+    .discuss--your--ideas{
+        align-items: center;
+        justify-content: center;
+    }
+    .marquee > p{
+        font-size: 1.25rem;
+        text-wrap: nowrap;
+    }
+    .our--services--area--container > .big--font{
+        text-align: center;
+    }
+    .our--services--description{
+        justify-content: center;
+        text-align: center;
+    }
+    .services--carousel--container, .team--members--tile--container, .lets--discuss--container > .text--area, .footer--buttons{
+        flex-direction: column;
+    }
+    .services--carousel--container{
+        height: auto;
+    }
+    .services--carousel--left{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .services--carousel--right{
+        animation: none;
+    }
+    .our--team--heading, .footer--buttons{
+        justify-content: center;
+        align-items: center;
+    }
+    .our--team--heading > p{
+        margin-left: auto;
+        width: 500px;
+    }
+    .lets--discuss--container > .text--area > p{
+        text-align: center;
+        margin-right: auto;
+    }
+    .lets--discuss--container > div{
+        justify-content: center;
+        align-items: center;
+    }
+    .footer--buttons{
+        gap: 25px;
+    }
+    .footer--buttons > a{
+        margin-right: auto;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .home--container{
+        padding: 20px;
+        padding-bottom: 0;
+    }  
+    .home--text--button > .big--font{
+        font-size: 3rem;
+    } 
+    .pill--cutout{
+        scale: 0.5;
+    }  
+    .discuss--your--ideas{
+        gap: 15px;
+    } 
+    .discuss--button > p, .discuss--your--ideas > p{
+        font-size: 0.75rem;
+    }
+    .twinkle{
+        top: 40%;
+    }
+    .arrow--ball{
+        scale: 0.5;
+        right: -10px;
+        top: -50px;
+    }
+    .home--carousel--image--container > img{
+        margin-top: 50px;
+    }
+    .marquee--container{
+        height: 8dvh;
+    }
+    .marquee > img{
+        height: 30px;
+        object-fit: contain;
+    }
+    .marquee > .big--font{
+        font-size: 1rem;
+    }
+    .our--services--area--container{
+        padding: 20px;
+    }
+    .our--services--area--container > .big--font{
+        font-size: 3rem;
+    }
+    .our--services--description{
+        gap: 10px;
+    }
+    .our--services--description > p{
+        font-size: 0.65rem;
+    }
+    .services--carousel--container{
+        margin-top: 20px;
+    }
+    .services--carousel--left{
+        width: 60%;
+    }
+    .service{
+        padding: 15px;
+        height: auto;
+        gap: 25px;
+    }
+    .service > p{
+        font-size: 0.8rem;
+    }
+    .service .service--button > a, .service > div > a{
+        font-size: 0.5rem;
+    }
+    .service > div{
+        align-items: center;
+        justify-content: space-between;
+    }
+    .service--button{
+        margin-right: auto;
+    }
+    .service--arrow{
+        gap: 10px;
+        align-items: center;
+        justify-content: flex-end;
+        margin-left: auto;
+    }
+    .service > div > a > .arrow{
+        height: 10px;
+        width: 10px;
+    }
+    .our--team--heading{
+        padding-top: 30px;
+    }
+    .our--team--heading > .big--font{
+        width: 100%;
+        font-size: 3rem;
+    }
+    .our--team--heading > img{
+        padding: 0;
+        margin: 0;
+    }
+    .team--members--tile--container{
+        margin-top: 50px;
+        animation: mobileTeam 16s ease-in-out infinite;
+        gap: 25px;
+        grid-template-columns: repeat(8, 350px);
+    }
+    .team--member--tile{
+        width: 80%;
+    }
+    .lets--discuss--container{
+        margin: 70px 10px 10px 10px;
+        padding: 30px;
+        padding-top: 60px;
+    }
+    .lets--discuss--container > div > p{
+        font-size: 2.5rem;
+        width: 100%;
+    }
+}
+
+@keyframes servicesAnim {
+    0%{
+        margin-top: 0px;
+    }
+    15%{
+        margin-top: 0px;
+    }
+    33%{
+        margin-top: -150px;
+    }
+    66%{
+        margin-top: -300px;
+    }
+    90%{
+        margin-top: -300px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+@keyframes teamAnim {
+    0%{
+        margin-left: 0px;
+    }
+    15%{
+        margin-left: -550px;
+    }
+    30%{
+        margin-left: -1125px;
+    }
+    45%{
+        margin-left: -1700px;
+    }
+    60%{
+        margin-left: -2275px;
+    }
+    75%{
+        margin-left: -2850px;
+    }
+    90%{
+        margin-left: -3425px;
+    }
+    95%{
+        margin-left: -3425px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+
+@keyframes mobileTeam {
+    0%{
+        margin-left: 0px;
+    }
+    8%{
+        margin-left: 0px;
+    }
+    15%{
+        margin-left: -350px;
+    }
+    30%{
+        margin-left: -725px;
+    }
+    45%{
+        margin-left: -1100px;
+    }
+    60%{
+        margin-left: -1475px;
+    }
+    75%{
+        margin-left: -1850px;
+    }
+    90%{
+        margin-left: -2225px;
+    }
+    95%{
+        margin-left: -2225px;
+    }
+    100%{
+        margin-left: 0px;
+    }
 }

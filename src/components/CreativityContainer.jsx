@@ -18,7 +18,7 @@ function CreativityContainer() {
               </a>
             </div>
 
-            <img src={creativityBlob} alt="blob5" />
+            <img src={creativityBlob} alt="blob5" className='smooth--shake4'/>
           </div>
     </>
   )
