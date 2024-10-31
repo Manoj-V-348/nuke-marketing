@@ -207,11 +207,11 @@
 .services--carousel--right{
     width: 100%;
     gap: 20px;
-    overflow-y: hidden;
     align-items: flex-start;
     justify-content: flex-start;
     animation: servicesAnim 10s ease infinite;
 }
+
 .our--team--heading{
     padding-top: 60px;
     justify-content: space-between;
@@ -228,14 +228,10 @@
     object-fit: contain;
 }
 .team--members--tile--container{
-    margin-top: 100px;
+    margin-top: 50px;
     gap: 25px;
-    overflow: hidden;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(8, 550px);
     position: relative;
-    animation: teamAnim 16s ease-in-out infinite;
+    
 }
 .lets--discuss--container{
     background-color: black;
@@ -464,12 +460,6 @@
     }
     .team--members--tile--container{
         margin-top: 50px;
-        animation: mobileTeam 16s ease-in-out infinite;
-        gap: 25px;
-        grid-template-columns: repeat(8, 350px);
-    }
-    .team--member--tile{
-        width: 80%;
     }
     .lets--discuss--container{
         margin: 70px 10px 10px 10px;
@@ -484,83 +474,87 @@
 
 @keyframes servicesAnim {
     0%{
-        margin-top: 0px;
+        transform: translateY(0px);
     }
     15%{
-        margin-top: 0px;
+        transform: translateY(0px);
     }
     33%{
-        margin-top: -150px;
+        transform: translateY(-150px);
     }
     66%{
-        margin-top: -300px;
+        transform: translateY(-300px);
     }
     90%{
-        margin-top: -300px;
+        transform: translateY(-300px);
     }
     100%{
-        margin-top: 0px;
+        transform: translateY(0px);
     }
 }
 @keyframes teamAnim {
     0%{
-        margin-left: 0px;
+        transform: translateX(0px);
+    }
+    7%{
+        transform: translateX(0px);
     }
     15%{
-        margin-left: -550px;
+        transform: translateX(-550px);
     }
     30%{
-        margin-left: -1125px;
+        
+        transform: translateX(-1125px);
     }
     45%{
-        margin-left: -1700px;
+        transform: translateX(-1700px);
     }
     60%{
-        margin-left: -2275px;
+        transform: translateX(-2275px);
     }
     75%{
-        margin-left: -2850px;
+        transform: translateX(-2850px);
     }
     90%{
-        margin-left: -3425px;
+        transform: translateX(-3425px);
     }
     95%{
-        margin-left: -3425px;
+        transform: translateX(-3425px);
     }
     100%{
-        margin-left: 0px;
+        transform: translateX(0px);
     }
 }
 
 @keyframes mobileTeam {
     0%{
-        margin-left: 0px;
+        transform: translateX(0px);
     }
     8%{
-        margin-left: 0px;
+        transform: translateX(0px);
     }
     15%{
-        margin-left: -350px;
+        transform: translateX(-350px);
     }
     30%{
-        margin-left: -725px;
+        transform: translateX(-725px);
     }
     45%{
-        margin-left: -1100px;
+        transform: translateX(-1100px);
     }
     60%{
-        margin-left: -1475px;
+        transform: translateX(-1475px);
     }
     75%{
-        margin-left: -1850px;
+        transform: translateX(-1850px);
     }
     90%{
-        margin-left: -2225px;
+        transform: translateX(-2225px);
     }
     95%{
-        margin-left: -2225px;
+        transform: translateX(-2225px);
     }
     100%{
-        margin-left: 0px;
+        transform: translateX(0px);
     }
 }

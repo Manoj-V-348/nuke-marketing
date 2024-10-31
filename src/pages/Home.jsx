@@ -157,34 +157,25 @@ function Home() {
             </div>
 
 
-            <div className="team--members--tile--container">
-              {
-                memberdata.map((d) => {
-                  return <Teammates key={d.id} dp={d.imageUrl} name={d.name} role={d.role} />
-                })
-              }
-            </div> 
+            <Teammates memberdata={memberdata} />
 
             <div className="lets--discuss--container vertical--flex">
               
               
               <div className="text--area horizontal--flex">
                 <div className='vertical--flex'> 
-                  <div className="rocket--container horizontal--flex center">
-                    <img src={rocket} alt="rocket" className='rocket'/>
-                  </div>
                   <img src={bottomBlob} alt="blob" />
                 </div> 
                 <p>LET'S DISCUSS YOUR IDEAS</p>
               </div>
 
               <div className="footer--buttons horizontal--flex">
-                <a href="#" className="our--works--button horizontal--flex center">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfP78nWZyWmHW7x5qOEsqVjmgGCfPYldqZM7u77oeCwrk2YCg/viewform?pli=1" className="our--works--button horizontal--flex center">
                   <p>TALK NOW</p>
                   <Icon icon="iconoir:arrow-up" width="32" height="32"className='arrow' />
                 </a>
 
-                <a href="#" className="our--works--button horizontal--flex center">
+                <a href="https://www.instagram.com/nuke_marketing_/" className="our--works--button horizontal--flex center">
                   <p>FOLLOW US</p>
                   <Icon icon="iconoir:arrow-up" width="32" height="32"className='arrow' />
                 </a>
